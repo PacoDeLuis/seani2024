@@ -23,7 +23,7 @@ class Career(models.Model):
         choices = LEVELS,
     )
 
-    def __srt__(self):
+    def __str__(self):
         return self.short_name
     
     class Meta:

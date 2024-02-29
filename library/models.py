@@ -62,7 +62,7 @@ class Question(models.Model):
         verbose_name = "Respuesta Correcta",
         max_length = 5)
 
-    def _str_(self):
+    def __str__(self):
         return f"{ self.module } - { self.id }"
     
     class Meta:
